@@ -62,70 +62,64 @@
   		<section class="promo">
   			<div class="sets set-1">
   				<img alt="мороженое" src="http://placehold.it/150x100">
-  				<h1>Крем-брюле и пломбир с малиновым джемом</h1>
+  				<h2>Крем-брюле и пломбир с малиновым джемом</h2>          
   			</div>
 
   			<div class="sets set-2">
   				<img alt="мороженое" src="http://placehold.it/150x100">
-  				<h1>Шоколадный пломбир и лимонный сорбет</h1>
+  				<h2>Шоколадный пломбир и лимонный сорбет</h2>
   			</div>
 
   			<div class="sets set-3">
   				<img alt="Пломбир с помадкой" src="http://placehold.it/150x100">
-  				<h1>Пломбир с помадкой и клубничный щербет</h1>
+  				<h2>Пломбир с помадкой и клубничный щербет</h2>
   			</div>
 
-            <div class="slider">
-                <input type="radio" name="set-select" checked value="Крем-брюле и пломбир с малиновым джемом" id="select-1">
-                <label for="select-1"></label>
-
-                <input type="radio" name="set-select" value="Шоколадный пломбир и лимонный сорбет" id="select-2">
-                <label for="select-2"></label>
-
-                <input type="radio" name="set-select" value="Пломбир с помадкой и клубничный щербет" id="select-3">
-                <label for="select-3"></label>
+            <div class="slider">  
+                <a href="#">select-1</a>
+                <a href="#">select-2</a>
+                <a href="#">select-3</a>
             </div>
 
             <a href="#">Давайте оба!</a>
 
-  			<form class="bonus" action="#" method="post">
-  				<h2>Малинка даром!</h2>
+  			<div class="bonus">  
+  				<h3>Малинка даром!</h3>
   				<p>При покупе 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-  				<input type="checkbox" name="bonus-1" checked>
-  				<input type="submit" value="Хочу варенье!">
-  			</form>
+  				<a href="#">Хочу варенье!</a>
+  				
+  			</div>
   			
-  			<form class="bonus" action="#" method="post">
-  				<h2>Шоколадки даром!</h2>
+  			<form class="bonus">
+  				<h3>Шоколадки даром!</h3>
   				<p>При покупе 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  				<input type="checkbox" name="bonus-2" checked>
-  				<input type="submit" value="Хочу шоколадки!">
+  				<a href="#">хочу шоколадки!</a>
   			</form>
   		</section>
 
-  		<section class="bestsellers">
+  		<section class="bestsellers">                       
   			<article class="bestsellers-item">
   				<img alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" src="http://placehold.it/150x100" width="267" height="267">
   				<span>310 р/кг</span>
-  				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+  				<h4><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
   			</article>
 
   			<article class="bestsellers-item">
   				<img alt="Сливочно-кофейное с кусочками шоколада" src="http://placehold.it/150x100" width="267" height="267">
   				<span>380 р/кг</span>
-  				<p>Сливочно-кофейное с кусочками шоколада</p>
+  				<h4><a href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
   			</article>
 
   			<article class="bestsellers-item">
   				<img alt="Сливочно-клубничное с присыпкой из белого шоколада" src="http://placehold.it/150x100" width="267" height="267">
   				<span>355 р/кг</span>
-  				<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+  				<h4><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
   			</article>
 
   			<article class="bestsellers-item">
   				<img alt="Сливочное крем-брюле с карамельной подливкой" src="http://placehold.it/150x100" width="267" height="267">
   				<span>415 р/кг</span>
-  				<p>Сливочное крем-брюле с карамельной подливкой</p>
+  				<h4><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
   			</article>
   		</section>
 
@@ -148,10 +142,10 @@
   			</ul>
   		</section>
 
-  		<section> <!--как назвать этот блок?-->
+  		<section> 
   			<div class="blog">
   				<p>Новое в нашем блоге</p>
-  				<a href="#"><h3>10 способов сервировки фруктовых щербетов к столу</h3></a>
+  				<h3><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h3> 
   			</div>
   			<div class="subscription">
   				<p>
@@ -174,38 +168,39 @@
   				<p>8 812 450-25-25</p>
   				<p>(с 10 до 20 ежедневно)</p>
   				<button type="button">Форма обратной связи</button>
-  				<form class="feedback" action="#" method="post">
-  					<p>Мы обязательно вам ответим!</p>
-  					<input type="text" name="name" placeholder="Как вас зовут?">
-  					<input type="password" name="password" placeholder="Ваша почта для ответа?">
-  					<textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
-  					<input type="submit" value="Отправить">
-  				</form>
   			</div>
   		</section>
   	</main>
 
   	<footer class="container">
-  			<div class="social">
-  				<a href="#">Твиттер</a>
-  				<a href="#">Инстаграм</a>
-  				<a href="#">Фейсбук</a>
-  				<a href="#">Вконтакте</a>
-  			</div>
+  		<div class="social">
+  			<a href="#">Твиттер</a>
+  			<a href="#">Инстаграм</a>
+  			<a href="#">Фейсбук</a>
+  			<a href="#">Вконтакте</a>
+  		</div>
 
-  			<ul class="useful-links">
+  		<ul class="useful-links">
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологичекские стандарты</a></li>
         </ul>
 
-  			<div class="developer">
-  				<a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img alt="developer" src="http://placehold.it/150x100" width="108" height="38">
-          </a>
-          <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
-  			</div>
+  		<div class="developer">
+  			<a href="https://htmlacademy.ru/intensive/htmlcss">
+            	<img alt="developer" src="http://placehold.it/150x100" width="108" height="38">
+          	</a>
+          	<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
+  		</div>
   	</footer>
+
+  	<form class="feedback" action="#" method="post">      
+  		<p>Мы обязательно вам ответим!</p>
+  		<input type="text" name="name" placeholder="Как вас зовут?">
+  		<input type="password" name="password" placeholder="Ваша почта для ответа?">
+  		<textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
+  		<input type="submit" value="Отправить">
+  	</form>
   </body>
 </html>
