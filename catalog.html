@@ -12,13 +12,13 @@
   			<ul>
   				<li class="active">
   					<a href="#">Каталог</a>
-  						<ul class="sub-menu">
-  							<li><a href="#">Новинки</a></li>
-  							<li>Сливочное</li>
-  							<li><a href="#">Щербеты</a></li>
-  							<li><a href="#">Фруктовый лед</a></li>
-  							<li><a href="#">Мелорин</a></li>
-  						</ul> 
+  					<ul class="sub-menu">
+  						<li><a href="#">Новинки</a></li>
+  						<li>Сливочное</li>
+  						<li><a href="#">Щербеты</a></li>
+  						<li><a href="#">Фруктовый лед</a></li>
+  						<li><a href="#">Мелорин</a></li>
+  					</ul> 
   				</li>
   				<li><a href="#">Доставка и оплата</a></li>
   				<li><a href="#">О компан-ии</a></li>
@@ -27,14 +27,47 @@
 
   		<div class="search-btn">
   			<a href="#">Поиск</a>
+  			<form class="searh" action="#" method="get">
+        		<input type="text" name="search-request" placeholder="Что ищем?">
+        	</form>
   		</div>
 
   		<div class="user-block">
   			<a href="#">Вход</a>
+  			<form class="enter-form" action="#" method="post">
+  				<label for="email">Электронная почта</label>
+        		<input type="email" name="email" placeholder="Электронная почта">
+
+        		<label for="password">Пароль</label>
+        		<input type="password" name="password" placeholder="Пароль">
+
+        		<input type="submit" value="Войти">
+
+        		<a href="#">Забыли пароль?</a>
+        		<a href="#">Новая регистрация</a>
+        	</form>
   		</div>
 
   		<div class="order-basket">
 			<a href="#">2 товара</a>
+			<div class="order">
+				<div class="order-item1">
+					<a href="#">Пломбир с апельсиновым джемом</a>
+					<span>1,5 кг. x <span class="alt-color">200 руб.</span></span>
+					<span>300 руб.</span>
+				</div>
+
+				<div class="order-item2">
+					<a href="#">Клубничный пломбир с присыпкой из белго шоколада</a>
+					<span>1,5 кг. x <span class="alr-color">300 руб.</span></span>
+					<span>450 руб.</span>
+				</div>
+
+				<hr>
+
+				<span>Итого: 750 руб.</span>
+				<a href="#">Оформить заказ</a>
+			</div>
   		</div>
 
   		<div class="phone">
@@ -51,7 +84,7 @@
   			<h1>Сливочное мороженое</h1>
 
   			<form action="#" method="post">
-  				<fieldset form class="sort">
+  				<fieldset class="sort">
   					<legend>Сортировка:</legend>
   					<select name="sort-options">
   						<option>по популярности</option>
@@ -61,7 +94,7 @@
   					</select>
   				</fieldset>
 
-  				<fieldset form class="range-filter">
+  				<fieldset class="range-filter">
             		<div class="range-controls">
                 		<div class="scale">
                 			<div class="bar"></div>
@@ -75,7 +108,7 @@
             		</div>
         		</fieldset>
 
-        		<fieldset form class="fats">
+        		<fieldset class="fats">
   					<legend>Жирность:</legend>
   					<input type="radio" name="fat" value="0%" id="type-1">
   					<label for="type-1">0%</label>
@@ -90,7 +123,7 @@
   					<label for="type-1">выше 30%</label>
   				</fieldset>
 
-  				<fieldset form class="fills">
+  				<fieldset class="fills">
   					<legend>Наполнители:</legend>
   					<input type="checkbox" name="chocolate" id="filler-1">
   					<label for="filler-1">шоколадные</label>

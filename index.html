@@ -7,13 +7,14 @@
   <body>
   	<header class="container">
       <img alt="Gllasy Shop" src="http://placehold.it/150x100" width="154" height="64">
+
       <nav class="main-navigation">
         <ul>
           <li>
             <a href="#">Каталог</a>
               <ul class="sub-menu">
                 <li><a href="#">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
@@ -23,15 +24,34 @@
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>  
+
       <div class="search-btn">
         <a href="#">Поиск</a>
+        <form class="searh" action="#" method="get">
+        	<input type="text" name="search-request" placeholder="Что ищем?">
+        </form>
       </div>
+
       <div class="user-block">
         <a href="#">Вход</a>
+        <form class="enter-form" action="#" method="post">
+        	<label for="email">Электронная почта</label>
+        	<input type="email" name="email" id="email" placeholder="Электронная почта">
+
+        	<label for="password">Пароль</label>
+        	<input type="password" name="password" id="password" placeholder="Пароль">
+
+        	<input type="submit" value="Войти">
+
+        	<a href="#">Забыли пароль?</a>
+        	<a href="#">Новая регистрация</a>
+        </form>
       </div>
+
       <div class="order-basket">
-      <a href="#">2 товара</a>
+      	<a href="#">Пусто</a>
       </div>
+
       <div class="phone">
         <span>с 10 до 20, ежедневно</span>
         <span>8 812 450-25-25</span>
@@ -41,49 +61,32 @@
   	<main class="container">
   		<section class="promo">
   			<div class="sets set-1">
-  				<img alt="Крем-брюле" src="http://placehold.it/150x100" width="372" height="584">
-  				<img alt="Пломбир" src="http://placehold.it/150x100" width="333" height="519">
+  				<img alt="мороженое" src="http://placehold.it/150x100">
   				<h1>Крем-брюле и пломбир с малиновым джемом</h1>
   			</div>
 
   			<div class="sets set-2">
-  				<img alt="Шоколадный пломбир" src="http://placehold.it/150x100" width="375" height="582">
-  				<img alt="Лимонный сорбет" src="http://placehold.it/150x100" width="338" height="521">
+  				<img alt="мороженое" src="http://placehold.it/150x100">
   				<h1>Шоколадный пломбир и лимонный сорбет</h1>
   			</div>
 
   			<div class="sets set-3">
-  				<img alt="Пломбир с помадкой" src="http://placehold.it/150x100" width="367" height="582">
-  				<img alt="Клубничный щербет" src="http://placehold.it/150x100" width="326" height="523">
+  				<img alt="Пломбир с помадкой" src="http://placehold.it/150x100">
   				<h1>Пломбир с помадкой и клубничный щербет</h1>
   			</div>
-        <!--Пока оставлю!
-  			<form class="promo-sets" action="#" method="post">
 
-  				<input type="radio" name="set-select" checked value="Крем-брюле и пломбир с малиновым джемом" id="select-1">
-  				<label for="select-1"></label>
+            <div class="slider">
+                <input type="radio" name="set-select" checked value="Крем-брюле и пломбир с малиновым джемом" id="select-1">
+                <label for="select-1"></label>
 
-  				<input type="radio" name="set-select" value="Шоколадный пломбир и лимонный сорбет" id="select-2">
-  				<label for="select-2"></label>
+                <input type="radio" name="set-select" value="Шоколадный пломбир и лимонный сорбет" id="select-2">
+                <label for="select-2"></label>
 
-  				<input type="radio" name="set-select" value="Пломбир с помадкой и клубничный щербет" id="select-3">
-  				<label for="select-3"></label>
+                <input type="radio" name="set-select" value="Пломбир с помадкой и клубничный щербет" id="select-3">
+                <label for="select-3"></label>
+            </div>
 
-  				<input type="submit" value="давайте оба!">
-  			</form>
-        -->
-        <div class="slider">
-          <input type="radio" name="set-select" checked value="Крем-брюле и пломбир с малиновым джемом" id="select-1">
-          <label for="select-1"></label>
-
-          <input type="radio" name="set-select" value="Шоколадный пломбир и лимонный сорбет" id="select-2">
-          <label for="select-2"></label>
-
-          <input type="radio" name="set-select" value="Пломбир с помадкой и клубничный щербет" id="select-3">
-          <label for="select-3"></label>
-        </div>
-
-        <a href="#">Давайте оба!</a>
+            <a href="#">Давайте оба!</a>
 
   			<form class="bonus" action="#" method="post">
   				<h2>Малинка даром!</h2>
@@ -132,10 +135,10 @@
   				<li>
   					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
   				</li>
-          <li>
-            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное 
-            сотрудничество.
-          </li>
+          		<li>
+            		Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное 
+            		сотрудничество.
+          		</li>
   				<li>
   					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
   				</li>
@@ -155,7 +158,9 @@
   					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
   				</p>
   				<form action="#" method="post">
-  					<input type="email" placeholder="Электронная почта">
+  					<label for="e-adress">Электронная почта</label>
+  					<input type="email" name="subscribe-email" id="e-adress" placeholder="Электронная почта">
+
   					<input type="submit" value="Отправить">
   				</form>
   			</div>
@@ -168,7 +173,14 @@
   				<h4>Для заказов по телефону</h4>
   				<p>8 812 450-25-25</p>
   				<p>(с 10 до 20 ежедневно)</p>
-  				<button>Форма обратной связи</button>
+  				<button type="button">Форма обратной связи</button>
+  				<form class="feedback" action="#" method="post">
+  					<p>Мы обязательно вам ответим!</p>
+  					<input type="text" name="name" placeholder="Как вас зовут?">
+  					<input type="password" name="password" placeholder="Ваша почта для ответа?">
+  					<textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
+  					<input type="submit" value="Отправить">
+  				</form>
   			</div>
   		</section>
   	</main>
