@@ -1,0 +1,19 @@
+body {
+	font-family: "Roboto";
+	font-size: 16px;
+	line-height: 1.375;
+	/*color: #ffffff;*/
+	font-weight: normal;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.promo-title {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 60.35px;
+}
