@@ -6,7 +6,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="container header">
+		<header class="container header clearfix">
 			<a class="logo-link" href="index.html">
 				<img class="logo" alt="Gllasy Shop" src="img/logo.png" width="154" height="64">
 			</a>
@@ -27,60 +27,60 @@
 		  			<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
 				</ul>
 	  		</nav>  
+	  		<div class="header-right">
+				<div class="search">
+					<a class="search-button" href="#">Поиск</a>
+					<form class="searh-form" action="#" method="get">
+						<input class="field search-field" type="text" name="search-request" placeholder="Что ищем?">
+					</form>
+	  			</div>
 
-			<div class="search">
-				<a class="search-button" href="#">Поиск</a>
-				<form class="searh-form" action="#" method="get">
-					<input class="field search-field" type="text" name="search-request" placeholder="Что ищем?">
-				</form>
-	  		</div>
+	  			<div class="user">
+					<a class="user-open" href="#">Вход</a>
+					<form class="user-form" action="#" method="post">
+						<label class="user-label" for="email">Электронная почта</label>
+						<input class="field user-field" type="email" name="email" id="email" placeholder="Электронная почта">
 
-	  		<div class="user">
-				<a class="user-open" href="#">Вход</a>
-				<form class="user-form" action="#" method="post">
-					<label class="user-label" for="email">Электронная почта</label>
-					<input class="field user-field" type="email" name="email" id="email" placeholder="Электронная почта">
+						<label class="user-label" for="password">Пароль</label>
+						<input class="field user-field" type="password" name="password" id="password" placeholder="Пароль">
 
-					<label class="user-label" for="password">Пароль</label>
-					<input class="field user-field" type="password" name="password" id="password" placeholder="Пароль">
+						<input class="button button-enter" type="submit" value="Войти">
 
-					<input class="button button-enter" type="submit" value="Войти">
+						<a class="user-recovery" href="#">Забыли пароль?</a>
+						<a class="user-registration" href="#">Новая регистрация</a>
+					</form>
+	  			</div>
 
-					<a class="user-recovery" href="#">Забыли пароль?</a>
-					<a class="user-registration" href="#">Новая регистрация</a>
-				</form>
-	  		</div>
+				<div class="basket">
+					<a class="basket-open basket-full" href="#">2 товара</a>
+					<div class="basket-list">
+						<div class="basket-item-1">
+							<button class="delete-button" type="button">Убрать</button>
+							<a class="basket-item-link" href="#">Пломбир с апельсиновым джемом</a>                             
+							<span class="basket-quantity">1,5 кг. x <span class="alt-color">200 руб.</span></span> 
+							<span class="basket-price">300 руб.</span>
+						</div>
 
-			<div class="basket">
-				<a class="basket-open basket-full" href="#">2 товара</a>
-				<div class="basket-list">
-					<div class="basket-item-1">
-						<button class="delete-button" type="button">Убрать</button>
-						<a class="basket-item-link" href="#">Пломбир с апельсиновым джемом</a>                             
-						<span class="basket-quantity">1,5 кг. x <span class="alt-color">200 руб.</span></span> 
-						<span class="basket-price">300 руб.</span>
+						<div class="basket-item-2">
+							<button class="delete-button" type="button">Убрать</button>
+							<a class="basket-item-link" href="#">Клубничный пломбир с присыпкой из белго шоколада</a>
+							<span class="basket-quantity">1,5 кг. x <span class="alt-color">300 руб.</span></span>
+							<span class="basket-price">450 руб.</span>
+						</div>
+
+						<hr>
+
+						<span class="basket-total">Итого: 750 руб.</span>
+						<a class="button button-confirm" href="#">Оформить заказ</a>
 					</div>
-
-					<div class="basket-item-2">
-						<button class="delete-button" type="button">Убрать</button>
-						<a class="basket-item-link" href="#">Клубничный пломбир с присыпкой из белго шоколада</a>
-						<span class="basket-quantity">1,5 кг. x <span class="alt-color">300 руб.</span></span>
-						<span class="basket-price">450 руб.</span>
-					</div>
-
-					<hr>
-
-					<span class="basket-total">Итого: 750 руб.</span>
-					<a class="button button-confirm" href="#">Оформить заказ</a>
 				</div>
 			</div>
-
 			<div class="call-time">
 				<span class="call-time-period">с 10 до 20, ежедневно</span>
 				<span class="call-time-phone">8 812 450-25-25</span>
 			</div>
 		</header>
-		<main class="container">
+		<main class="container catalog-content">
 			<ul class="bread-crumbs">
 				<li class="bread-crumbs-item"><a href="index.html">Главная</a></li>
 				<li class="bread-crumbs-item"><a href="#">Каталог</a></li>
@@ -88,7 +88,7 @@
 			</ul>
 
 			<h1 class="title page-title">Сливочное мороженое</h1>
-
+			
 			<form class="filter" action="#" method="post">
 				<fieldset class="filter-item">
 					<legend class="filter-title">Сортировка:</legend>  
@@ -150,8 +150,8 @@
 
 				<input class="filter-submit" type="submit" value="Примемнить">
 			</form>
-
-			<section class="product">
+			
+			<section class="clearfix product">
 				<article class="product-item">                                                   
 					<a class="product-img-link" href="#">
 						<img class="product-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" src="img/product-item-1.png" width="267" height="267">
@@ -261,16 +261,16 @@
 				</article>
 			</section>
 			<ul class="page"> 
-				<li class="page-number-prev"><a class="page-link" href="#">Назад</a></li>                 
+				<li class="page-number page-number-prev"><a class="page-link" href="#">Назад</a></li>                 
 				<li class="page-number page-number-current">1</li>
 				<li class="page-number"><a class="page-link" href="#">2</a></li>
 				<li class="page-number"><a class="page-link" href="#">3</a></li>
 				<li class="page-number"><a class="page-link" href="#">4</a></li>
 				<li class="page-number"><a class="page-link" href="#">5</a></li>
-				<li class="page-number-next"><a class="page-link" href="#">Вперед</a></li>
+				<li class="page-number page-number-next"><a class="page-link" href="#">Вперед</a></li>
 			</ul>		
 		</main>
-		<footer class="container">
+		<footer class="container clearfix">
 			<div class="social">
 				<a class="social-button social-twit" href="#">Твиттер</a>
 				<a class="social-button social-insta" href="#">Инстаграм</a>
@@ -278,12 +278,12 @@
 				<a class="social-button social-vk" href="#">Вконтакте</a>
 			</div>
 
-			<ul class="useful">
-		  		<li class="useful-item"><a class="useful-link" href="#">Для поставщиков</a></li>
-		  		<li class="useful-item"><a class="udeful-link" href="#">Наши документы</a></li>
-		  		<li class="useful-item"><a class="useful-link" href="#">О производстве</a></li>
-		  		<li class="useful-item"><a class="useful-link" href="#">Экологичекские стандарты</a></li>
-			</ul>
+			<div class="useful">
+		  		<a class="useful-link" href="#">Для поставщиков</a>
+		  		<a class="udeful-link" href="#">Наши документы</a>
+		  		<a class="useful-link" href="#">О производстве</a>
+		  		<a class="useful-link" href="#">Экологичекские стандарты</a>
+			</div>
 
 			<div class="developer">
 				<a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
