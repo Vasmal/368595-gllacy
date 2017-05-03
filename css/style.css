@@ -137,7 +137,7 @@ body {
 	border-radius: 16px;
 }
 
-.header-right-link::before {
+.header-right-link:not(.search-button)::before {
 	content: "";
 	position: absolute;
 	top: 6px;
@@ -186,16 +186,20 @@ body {
 	padding: 0;
 	width: 32px;
 	height: 32px;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.2) url("../img/search.png") no-repeat 50% 50%;
+	border: none;
+	outline: none;
 }
 
-.search-button::before {
+/*.search-button::before {
 	top: 7px;
 	left: 8px;
 	background: url("../img/search.png") no-repeat;
-}
+}*/
 
-.search-button:hover::before {
-	background: url("../img/search-hover.png") no-repeat;
+.search-button:hover {
+	background: #f8f7f4 url("../img/search-hover.png") no-repeat 50% 50%;
 }
 
 .call-time {
