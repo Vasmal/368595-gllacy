@@ -5,7 +5,7 @@
 		<title>Сливочное мороженое</title>
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<header class="container header">
@@ -20,7 +20,7 @@
 							<a class="nav-link" href="#">Каталог</a>
 				  			<ul class="sub-list">
 								<li class="sub-item"><a class="sub-link" href="#">Новинки</a></li>
-								<li class="sub-item sub-current"><a class="sub-link" href="">Сливочное</a></li>
+								<li class="sub-item sub-current"><a class="sub-link">Сливочное</a></li>
 								<li class="sub-item"><a class="sub-link" href="#">Щербеты</a></li>
 								<li class="sub-item"><a class="sub-link" href="#">Фруктовый лед</a></li>
 								<li class="sub-item"><a class="sub-link" href="#">Мелорин</a></li>
@@ -124,35 +124,39 @@
 
 					<fieldset class="filter-item">
 						<legend class="filter-title">Жирность:</legend>
-						<input class="filter-select" type="radio" name="fat" value="0%" id="type-1">
-						<label class="filter-value" for="type-1">0%</label>
+						<div class="filter-field">
+							<input class="filter-select" type="radio" name="fat" value="0%" id="type-1">
+							<label class="filter-value filter-radio " for="type-1">0%</label>
 
-						<input class="filter-select" type="radio" name="fat" value="до 10%" id="type-2">
-						<label class="filter-value" for="type-2">до 10%</label>
+							<input class="filter-select" type="radio" checked name="fat" value="до 10%" id="type-2">
+							<label class="filter-value filter-radio" for="type-2">до 10%</label>
 
-						<input class="filter-select" type="radio" name="fat" value="до 30%" id="type-3">
-						<label class="filter-value" for="type-3">до 30%</label>
+							<input class="filter-select" type="radio" name="fat" value="до 30%" id="type-3">
+							<label class="filter-value filter-radio" for="type-3">до 30%</label>
 
-						<input class="filter-select" type="radio" name="fat" value="выше 30%" id="type-4">
-						<label class="filter-value" for="type-1">выше 30%</label>
+							<input class="filter-select" type="radio" name="fat" value="выше 30%" id="type-4">
+							<label class="filter-value filter-radio" for="type-4">выше 30%</label>
+						</div>
 					</fieldset>
 
 					<fieldset class="filter-item">
 						<legend class="filter-title">Наполнители:</legend>
-						<input class="filter-checkbox" type="checkbox" name="chocolate" id="filler-1">
-						<label class="filter-value"  for="filler-1">шоколадные</label>
+						<div class="filter-field">
+							<input class="filter-select" type="checkbox" name="chocolate" id="filler-1">
+							<label class="filter-value filter-check"  for="filler-1">шоколадные</label>
 
-						<input class="filter-checkbox" type="checkbox" name="shugar" id="filler-2">
-						<label class="filter-value" for="filler-2">сахарные присыпки</label>
+							<input class="filter-select" type="checkbox" name="shugar" id="filler-2">
+							<label class="filter-value filter-check" for="filler-2">сахарные присыпки</label>
 
-						<input class="filter-checkbox" type="checkbox" name="fruits" id="filler-3">
-						<label class="filter-value" for="filler-3">фрукты</label>
+							<input class="filter-select" type="checkbox" name="fruits" id="filler-3">
+							<label class="filter-value filter-check" for="filler-3">фрукты</label>
 
-						<input class="filter-checkbox" type="checkbox" name="syrups" id="filler-4">
-						<label class="filter-value" for="filler-4">сиропы</label>
+							<input class="filter-select" type="checkbox" name="syrups" id="filler-4">
+							<label class="filter-value filter-check" for="filler-4">сиропы</label>
 
-						<input class="filter-checkbox" type="checkbox" name="jams" id="filler-5">
-						<label class="filter-value" for="filler-5">джемы</label>
+							<input class="filter-select" type="checkbox" name="jams" id="filler-5">
+							<label class="filter-value filter-check" for="filler-5">джемы</label>
+						</div>
 					</fieldset>
 
 					<input class="filter-submit" type="submit" value="Примемнить">
@@ -272,7 +276,7 @@
 			</section>
 			<section class="container container-page">
 				<div class="container-flex page"> 
-					<a class="page-number page-left-arrow" href="#">Назад</a>
+					<a class="page-number page-left-arrow disabled">Назад</a>
 					<a class="page-number page-number-current">1</a>
 					<a class="page-number" href="#">2</a>
 					<a class="page-number" href="#">3</a>
