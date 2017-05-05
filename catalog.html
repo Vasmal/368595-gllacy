@@ -19,7 +19,7 @@
 			  			<li class="nav-item nav-current">
 							<a class="nav-link" href="#">Каталог</a>
 				  			<ul class="sub-list">
-								<li class="sub-item"><a class="sub-link" href="#">Новинки</a></li>
+								<li class="sub-item"><a class="sub-link sub-news" href="#">Новинки</a></li>
 								<li class="sub-item sub-current"><a class="sub-link">Сливочное</a></li>
 								<li class="sub-item"><a class="sub-link" href="#">Щербеты</a></li>
 								<li class="sub-item"><a class="sub-link" href="#">Фруктовый лед</a></li>
@@ -33,39 +33,50 @@
 		  		<div class="header-right">
 					<div class="header-right-item search">
 						<button class="header-right-link search-button" type="button">Поиск</button>
-						<form class="searh-form" action="#" method="get">
-							<input class="field search-field" type="text" name="search-request" placeholder="Что ищем?">
+						<form class="header-right-form searh-form" action="#" method="get">
+							<legend class="form-section">
+								<input class="field search-field" type="text" name="search-request" id="search-request" placeholder="Что ищем?">
+								<label for="search-request">Что ищем?</label>
+							</legend>
 						</form>
 		  			</div>
 
 		  			<div class="header-right-item user">
 						<a class="header-right-link user-open" href="#">Вход</a>
-						<form class="user-form" action="#" method="post">
-							<label class="user-label" for="email">Электронная почта</label>
-							<input class="field user-field" type="email" name="email" id="email" placeholder="Электронная почта">
+						<form class="header-right-form user-form" action="#" method="post">
+							<legend class="form-section">
+								<input class="field user-field" type="email" name="email" id="email" placeholder="Электронная 
+								почта">
+								<label class="user-label" for="email">Электронная почта</label>
+							</legend>
 
-							<label class="user-label" for="password">Пароль</label>
-							<input class="field user-field" type="password" name="password" id="password" placeholder="Пароль">
+							<legend class="form-section">
+								<input class="field user-field" type="password" name="password" id="password" placeholder="Пароль">
+								<label class="user-label" for="password">Пароль</label>
+							</legend>
 
-							<input class="button button-enter" type="submit" value="Войти">
-
-							<a class="user-link" href="#">Забыли пароль?</a>
-							<a class="user-link" href="#">Новая регистрация</a>
+							<button class="button button-enter" type="submit">Войти</button>
+							<div class="user-links">
+								<a class="user-link" href="#">Забыли пароль?</a>
+								<a class="user-link" href="#">Новая регистрация</a>
+							</div>
 						</form>
 		  			</div>
 
 					<div class="header-right-item basket">
 						<a class="header-right-link basket-open basket-full" href="#">2 товара</a>
-						<div class="basket-list">
-							<div class="basket-item-1">
+						<div class="basket-table">
+							<div class="basket-item">
 								<button class="delete-button" type="button">Убрать</button>
+								<div class="basket-img img-1"></div>
 								<a class="basket-item-link" href="#">Пломбир с апельсиновым джемом</a>                             
 								<span class="basket-quantity">1,5 кг. x <span class="alt-color">200 руб.</span></span> 
 								<span class="basket-price">300 руб.</span>
 							</div>
 
-							<div class="basket-item-2">
+							<div class="basket-item">
 								<button class="delete-button" type="button">Убрать</button>
+								<div class="basket-img img-2"></div>
 								<a class="basket-item-link" href="#">Клубничный пломбир с присыпкой из белго шоколада</a>
 								<span class="basket-quantity">1,5 кг. x <span class="alt-color">300 руб.</span></span>
 								<span class="basket-price">450 руб.</span>
