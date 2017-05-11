@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto";
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.375;
 	color: #ffffff;
@@ -21,10 +21,6 @@ body {
 
 
 /*header*/
-
-
-
-
 
 
 .container {
@@ -54,12 +50,12 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-style: 0;
+	font-size: 0;
 }
 
 .nav-item {
 	display: inline-block;
-	margin-right: -1px;
+	margin-right: 2px;
 	padding-bottom: 5px;
 	position: relative;
 }
@@ -220,6 +216,7 @@ body {
 	cursor: pointer;
 	background: rgba(255, 255, 255, 0.2) url("../img/search.png") no-repeat 50% 50%;
 	border: none;
+	outline: none;
 }
 
 .search-button:hover {
@@ -243,7 +240,7 @@ body {
 }
 
 
-.header-right-item:hover .header-right-form{
+.header-right-item:hover .header-right-form {
 	display: block;
 }
 
@@ -305,6 +302,16 @@ body {
 	color: #5b9ddf;
 }
 
+.field:valid {
+	font-weight: bold;
+	color: #323232;
+}
+
+.field:valid + label {
+	display: block;
+	color: #999999;
+}
+
 .user-form {
 	z-index: 10;
 	box-sizing: border-box;
@@ -317,7 +324,7 @@ body {
 	padding-bottom: 0;
 }
 
-.user-form .form-section:last-of-type {
+.user-form .form-section:nth-child(2) {
 	margin-bottom: 20px;
 }
 
@@ -334,8 +341,6 @@ body {
 	padding: 11px 10px;
 	margin-right: 15px;
 	border: none;
-	border-
-
 }
 
 .user-links {
@@ -421,7 +426,8 @@ body {
 	padding: 0;
 	height: 1px;
 	background-color: #cacac7;
-	margin: 16px 7px 12px;
+	border: none;
+	margin: 16px 8px 13px 7px;
 }
 
 .delete-button {
@@ -520,9 +526,8 @@ body {
 	display: inline-block;
 	font-size: 22px;
 	line-height: 24px;
-	word-wrap: nowrap;
+	white-space: nowrap;
 	margin-top: 4px;
-	margin-left: ;
 }
 
 /*button status*/
@@ -531,7 +536,7 @@ body {
 	position: relative;
 	background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	
 	cursor: pointer;
 	outline: none;
 	border-radius: 32px;
@@ -581,9 +586,9 @@ body {
 	display: none;
 }
 
-#select-1:checked ~ .site-wrapper .slide-1,
-#select-2:checked ~ .site-wrapper .slide-2,
-#select-3:checked ~ .site-wrapper .slide-3 {
+#select-1:checked ~ .slide-1,
+#select-2:checked ~ .slide-2,
+#select-3:checked ~ .slide-3 {
 	display: block;
 } 
 
@@ -605,6 +610,7 @@ body {
 	line-height: 44px;
 	font-weight: bold;
 	color: #ffffff;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .slider-controls {
@@ -619,7 +625,7 @@ body {
 	box-sizing: border-box;
 	width: 21px;
 	height: 21px;
-	border: 3px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
 	margin-right: 8px;
 	cursor: pointer;
@@ -821,8 +827,7 @@ body {
 	left: 46px;
 	border: none;
 	box-sizing: border-box;
-	width: 200px;
-	padding: 11px 10px;
+	padding: 11px 13px;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
@@ -831,6 +836,10 @@ body {
 
 .product-item:hover {
 	z-index: 10;
+}
+
+.product-item:hover .product-title-link {
+	border: 0;
 }
 
 .product-item:hover::before,
@@ -886,7 +895,7 @@ body {
 	height: 49px;
 }
 
-.features-description:first-child::before {
+.features-description:nth-child(1)::before {
 	background: url("../img/features-icon-1.png") no-repeat;
 }
 .features-description:nth-child(2)::before {
@@ -895,7 +904,7 @@ body {
 .features-description:nth-child(3)::before {
 	background: url("../img/features-icon-3.png") no-repeat;
 }
-.features-description:last-child::before {
+.features-description:nth-child(4)::before {
 	background: url("../img/features-icon-4.png") no-repeat;
 }  
 
@@ -926,7 +935,11 @@ body {
 	line-height: 30px;
 	font-weight: bold;
 	color: #323232;
-	text-decoration: 2px solid #323232;
+}
+
+.blog-link:hover,
+.blog-linc:active {
+	color: #e84d37;
 }
 
 .subscribe {
@@ -1112,6 +1125,7 @@ body {
 .feedback-field {
 	box-sizing: border-box;
 	width: 267px;
+	font-size: 16px;
 }
 
 .feedback-text {
@@ -1119,6 +1133,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	height: 155px;
+	font-family: inherit;
 	font-size: 16px;
 	line-height: 24px;
 	padding: 6px 15px;
@@ -1379,6 +1394,7 @@ body {
 	color: #ffffff;
 	background: rgba(255, 255, 255, 0.2) url("../img/filter-options.png") no-repeat 172px 50%;
 	border: none;
+	outline: none;
 	border-radius: 18px;
 	-webkit-appearance: none;
 }
@@ -1526,7 +1542,8 @@ body {
 	width: 144px;
 	padding: 7px;
 	margin-left: 2px;
-	border: 3px solid #ffffff;
+	border: 2px solid #ffffff;
+	outline: none;
 	border-radius: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	cursor: pointer;
