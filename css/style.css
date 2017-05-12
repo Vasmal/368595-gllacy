@@ -11,9 +11,6 @@ body {
 }
 
 a {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: normal;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -1142,6 +1139,7 @@ a:active{
 
 .map {
 	position: relative;
+	background-color: #ece5c8;
 }
 
 .map-canvas {
@@ -1153,12 +1151,11 @@ a:active{
 }
 
 .contacts {
+	position: relative;
 	padding: 62px 26px;
-	background-color: #ece5c8;
 }
 
 .contacts-block {
-	position: relative;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 302px;
