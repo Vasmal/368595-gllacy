@@ -23,9 +23,9 @@ ymaps.ready(function () {
 
 	var myMarker = new ymaps.Placemark([59.938615, 30.322947], {}, {
   		iconLayout: 'default#image',
-  		iconImageHref: '../img/map-marker.png',
+  		iconImageHref: 'img/map-marker.png',
   		iconImageSize: [218, 142],
-  		iconImageOffset: [-109, -142]
+  		iconImageOffset: [-40, -142]
 	});
 
 	myMap.geoObjects.add(myMarker);

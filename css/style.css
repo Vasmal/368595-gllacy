@@ -1140,12 +1140,25 @@ a:active{
 	margin-bottom: 40px;
 }
 
+.map {
+	position: relative;
+}
+
+.map-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .contacts {
 	padding: 62px 26px;
 	background-color: #ece5c8;
 }
 
 .contacts-block {
+	position: relative;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 302px;
