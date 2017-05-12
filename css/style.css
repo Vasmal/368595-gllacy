@@ -1518,7 +1518,7 @@ a:active{
 	        box-sizing: border-box;
 	height: 36px;
 	width: 194px;
-	padding: 9px 16px;
+	padding: 7px 16px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1531,6 +1531,10 @@ a:active{
 	-webkit-appearance: none;
 	   -moz-appearance: none;
 	        appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .filter-options:hover {
