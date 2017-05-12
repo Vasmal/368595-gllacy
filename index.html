@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Глейси</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	</head>
 	<body>
@@ -214,16 +214,20 @@
 					</div>
 				</section>
 
-				<section class="container contacts">
-					<div class="contacts-block">
-						<p class="contacts-title-1">Адрес главного офиса и офлайн магазина:</p>
-						<p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-						<p class="contacts-title-2">Для заказов по телефону:</p>
-						<p class="contacts-phone">8 812 450-25-25</p>
-						<p class="contacts-period">(с 10 до 20 ежедневно)</p>
-						<button class="button button-feedback" type="button">Форма обратной связи</button>
+				<div clas="map">
+					<div class="map-canvas" id="yandex-map">
 					</div>
-				</section>
+					<section class="container contacts">
+						<div class="contacts-block">
+							<p class="contacts-title-1">Адрес главного офиса и офлайн магазина:</p>
+							<p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+							<p class="contacts-title-2">Для заказов по телефону:</p>
+							<p class="contacts-phone">8 812 450-25-25</p>
+							<p class="contacts-period">(с 10 до 20 ежедневно)</p>
+							<button class="button button-feedback" type="button">Форма обратной связи</button>
+						</div>
+					</section>
+				</div>
 			</main>
 
 			<footer class="container">
@@ -281,6 +285,7 @@
 			</div>
 			<div class="modal-overlay"></div>
 		</div>
-		<script src="js/scripts.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

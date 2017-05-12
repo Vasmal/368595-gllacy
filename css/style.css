@@ -1142,8 +1142,8 @@ a:active{
 
 .contacts {
 	padding: 62px 26px;
-	background: #ece5c8 url("../img/map-with-marker.jpg") no-repeat;
-	background-position: 0 -108px;
+	background: #ece5c8;
+	
 }
 
 .contacts-block {
