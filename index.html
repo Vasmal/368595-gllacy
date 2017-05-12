@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<title>Глейси</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	</head>
 	<body>
-		<input class="slider-select" type="radio" name="toggle" id="select-1" checked>
-		<input class="slider-select" type="radio" name="toggle" id="select-2">
-		<input class="slider-select" type="radio" name="toggle" id="select-3">
+		<input class="slider-select slider-select-1" type="radio" name="toggle" id="select-1" checked>
+		<input class="slider-select slider-select-2" type="radio" name="toggle" id="select-2">
+		<input class="slider-select slider-select-3" type="radio" name="toggle" id="select-3">
 		<div class="site-wrapper">
 			<header class="container header">
 				<div class="container-flex">
@@ -229,10 +229,10 @@
 			<footer class="container">
 				<div class="container-flex footer-flex">
 					<div class="social">
-						<a class="social-button social-twit" href="#">Твиттер</a>
-						<a class="social-button social-insta" href="#">Инстаграм</a>
-						<a class="social-button social-fb" href="#">Фейсбук</a>
-						<a class="social-button social-vk" href="#">Вконтакте</a>
+						<a class="social-button social-twit" title="Твиттер" href="#">Твиттер</a>
+						<a class="social-button social-insta" title="Инстаграм" href="#">Инстаграм</a>
+						<a class="social-button social-fb" title="Фейсбук" href="#">Фейсбук</a>
+						<a class="social-button social-vk" title="Вконтакте" href="#">Вконтакте</a>
 					</div>
 
 					<div class="useful">
@@ -249,7 +249,7 @@
 
 					<div class="developer">
 						<a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
-							<img class="developer-img" alt="developer" src="img/developer-logo.png" width="108" height="38">
+							<img class="developer-img" alt="developer" title="developer-logo" src="img/developer-logo.png" width="108" height="38">
 						</a>
 						<br>
 						<span class="developer-company">Сделано в <a class="developer-text-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</span>
@@ -281,5 +281,6 @@
 			</div>
 			<div class="modal-overlay"></div>
 		</div>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>

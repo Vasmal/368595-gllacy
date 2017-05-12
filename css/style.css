@@ -7,7 +7,7 @@ body {
 	line-height: 1.375;
 	color: #ffffff;
 	font-weight: normal;
-	background-color: #849d8f; /*временный фон*/
+	background-color: #849d8f; 
 }
 
 a {
@@ -78,6 +78,7 @@ a:active{
 
 .nav-item {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 2px;
 	padding-bottom: 5px;
 	position: relative;
@@ -85,6 +86,7 @@ a:active{
 
 .nav-link {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 16px; 
 	line-height: 18px;
 	font-weight: bold;
@@ -407,6 +409,7 @@ a:active{
 
 .user-link {
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -510,6 +513,7 @@ a:active{
 
 .delete-button {
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	cursor: pointer;
 	font-size: 0;
@@ -612,6 +616,7 @@ a:active{
 
 .call-time-phone {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 22px;
 	line-height: 24px;
 	white-space: nowrap;
@@ -681,9 +686,9 @@ a:active{
 	display: none;
 }
 
-#select-1:checked ~ .site-wrapper .slide-1,
-#select-2:checked ~ .site-wrapper .slide-2,
-#select-3:checked ~ .site-wrapper .slide-3 {
+.slider-select-1:checked ~ .site-wrapper .slide-1,
+.slider-select-2:checked ~ .site-wrapper .slide-2,
+.slider-select-3:checked ~ .site-wrapper .slide-3 {
 	display: block;
 } 
 
@@ -699,6 +704,7 @@ a:active{
 
 .slide-button {
 	display: inline-block;
+	vertical-align: top;
 	padding: 9px 41px;
 	text-decoration: none;
 	font-size: 32px;
@@ -717,6 +723,7 @@ a:active{
 
 .slide-controls-select {
 	display: inline-block;
+	vertical-align: top;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 21px;
@@ -732,23 +739,23 @@ a:active{
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-#select-1:checked ~ .site-wrapper label[for="select-1"],
-#select-2:checked ~ .site-wrapper label[for="select-2"],
-#select-3:checked ~ .site-wrapper label[for="select-3"] {
+.slider-select-1:checked ~ .site-wrapper label[for="select-1"],
+.slider-select-2:checked ~ .site-wrapper label[for="select-2"],
+.slider-select-3:checked ~ .site-wrapper label[for="select-3"] {
 	background-color: #ffffff;
 }
 
-#select-1:checked ~ .site-wrapper {
+.slider-select-1:checked ~ .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/slide-1.jpg");
 }
 
-#select-2:checked ~ .site-wrapper {
+.slider-select-2:checked ~ .site-wrapper {
 	background-color: #8996a6;
 	background-image: url("../img/slide-2.jpg");
 }
 
-#select-3:checked ~ .site-wrapper {
+.slider-select-3:checked ~ .site-wrapper {
 	background-color: #9d8b84;
 	background-image: url("../img/slide-3.jpg");
 }
@@ -776,11 +783,11 @@ a:active{
 }
 
 .bonus-left {
-	background-image: url("../img/bonus-1-background.jpg");
+	background: #b70017 url("../img/bonus-1-background.jpg") no-repeat;
 }
 
 .bonus-right {
-	background-image: url("../img/bonus-2-background.jpg");
+	background: #2a140b url("../img/bonus-2-background.jpg") no-repeat;
 }
 
 .bonus-title {
@@ -856,6 +863,7 @@ a:active{
 
 .product-img-link {
 	display: inline-block;
+	vertical-align: top;
 	text-decoration: none;
 	margin-bottom: 7px;
 	border-radius: 50%;
@@ -956,8 +964,7 @@ a:active{
 .features {
 	padding: 24px 21px 20px;
 	margin-bottom: 40px;
-	background-color: #e6d8b7;
-	background-image: url("../img/features-background.jpg");
+	background: #e6d8b7 url("../img/features-background.jpg");
 	border-radius: 14px;
 }
 
@@ -980,12 +987,12 @@ a:active{
 
 .features-description {
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
 	color: #323232;
-	vertical-align: top;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 539px;
@@ -1082,6 +1089,7 @@ a:active{
 
 .subscribe-field {
 	display: inline-block;
+	vertical-align: top;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 367px;
@@ -1098,6 +1106,7 @@ a:active{
 
 .button-subscribe {
 	display: inline-block;
+	vertical-align: top;
 	border: none;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -1116,7 +1125,7 @@ a:active{
 
 .contacts {
 	padding: 62px 26px;
-	background-image: url("../img/map-with-marker.jpg");
+	background: #ece5c8 url("../img/map-with-marker.jpg") no-repeat;
 	background-position: 0 -108px;
 }
 
@@ -1290,6 +1299,12 @@ a:active{
 	height: 100%;
 	background: rgba(0, 0, 0, 0.3);
 }
+
+.popup-show {
+	display: block;
+}
+
+
 /*footer*/
 
 .footer-flex {
@@ -1359,6 +1374,7 @@ a:active{
 
 .useful-column {
 	display: inline-block;
+	vertical-align: top;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 167px;
@@ -1372,6 +1388,7 @@ a:active{
 
 .useful-link {
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	white-space: nowrap;
 	font-size: 13px;
@@ -1407,6 +1424,7 @@ a:active{
 
 .developer-link {
 	display: inline-block;
+	vertical-align: top;
 	text-decoration: none;	
 }
 
@@ -1453,11 +1471,12 @@ a:active{
 }
 
 .bread-crumbs-item {
+	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: normal;
 	color: #ffffff;
-	display: inline-block;
 	margin-right: 8px;
 	
 }
@@ -1678,6 +1697,16 @@ select::-ms-expand {
 .filter-select:checked + .filter-value::after {
 	display: block;
 }
+
+.filter-select:disabled + .filter-value::before,
+.filter-select:disabled + .filter-value::after {
+	opacity: 0.4;
+}
+
+.filter-select:disabled + .filter-value:hover::before {
+	border-width: 1px;
+} 
+
 
 .filter-value:hover:before {
 	border-width: 2px;

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Сливочное мороженое</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	</head>
 	<body>
@@ -156,7 +156,7 @@
 							<input class="filter-select" type="checkbox" name="chocolate" id="filler-1">
 							<label class="filter-value filter-check"  for="filler-1">шоколадные</label>
 
-							<input class="filter-select" type="checkbox" name="shugar" id="filler-2">
+							<input class="filter-select" type="checkbox" name="shugar" id="filler-2" disabled>
 							<label class="filter-value filter-check" for="filler-2">сахарные присыпки</label>
 
 							<input class="filter-select" type="checkbox" name="fruits" id="filler-3">
@@ -300,10 +300,10 @@
 		<footer class="container">
 			<div class="container-flex footer-flex">
 				<div class="social">
-					<a class="social-button social-twit" href="#">Твиттер</a>
-					<a class="social-button social-insta" href="#">Инстаграм</a>
-					<a class="social-button social-fb" href="#">Фейсбук</a>
-					<a class="social-button social-vk" href="#">Вконтакте</a>
+					<a class="social-button social-twit" title="Твиттер" href="#">Твиттер</a>
+					<a class="social-button social-insta" title="Инстаграм" href="#">Инстаграм</a>
+					<a class="social-button social-fb" title="Фейсбук" href="#">Фейсбук</a>
+					<a class="social-button social-vk" title="Вконтакте" href="#">Вконтакте</a>
 				</div>
 
 				<div class="useful">
@@ -320,7 +320,7 @@
 
 				<div class="developer">
 					<a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
-						<img class="developer-img" alt="developer" src="img/developer-logo.png" width="108" height="38">
+						<img class="developer-img" alt="developer" title="developer-logo" src="img/developer-logo.png" width="108" height="38">
 					</a>
 					<br>
 					<span class="developer-company">Сделано в <a class="developer-text-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017</span>
