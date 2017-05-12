@@ -233,6 +233,8 @@ a:active{
 	left: 16px;
 	width: 21px;
 	height: 19px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
 }
 
 .header-right-link:hover {
@@ -241,11 +243,11 @@ a:active{
 }
 
 .user-open::before {
-	background: url("../img/user-block-icon.png") no-repeat;
+	background-position: -21px -344px;
 }
 
 .user-open:hover::before {
-	background: url("../img/user-open-hover.png") no-repeat;
+	background-position: -21px -363px;
 }
 
 .search-button {
@@ -255,13 +257,26 @@ a:active{
 	height: 32px;
 	margin-right: 2px;
 	cursor: pointer;
-	background: rgba(255, 255, 255, 0.2) url("../img/search.png") no-repeat 50% 50%;
+	background: rgba(255, 255, 255, 0.2);
 	border: none;
 	outline: none;
 }
 
-.search-button:hover {
-	background: #f8f7f4 url("../img/search-hover.png") no-repeat 50% 50%;
+.search-button::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 18px;
+	height: 18px;
+	transform: translate(-50%, -50%);
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -32px -213px;
+}
+
+.search-button:hover::before {
+	background-position: -32px -196px;
 }
 
 .header-right-item {
@@ -456,19 +471,19 @@ a:active{
 }
 
 .basket-open::before {
-	background: url("../img/basket-icon.png") no-repeat;
+	background-position: 0px -344px;
 }
 
 .basket-open:hover::before {
-	background: url("../img/basket-icon-hover.png") no-repeat;
+	background-position: -21px -324px;
 }
 
 .basket-full::before {
-	background: url("../img/basket-icon-full.png") no-repeat;
+	background-position: 0px -324px;
 }
 
 .basket-full:hover::before {
-	background: url("../img/basket-icon-full.png") no-repeat;
+	background-position: 0px -324px;
 }
 
 .basket-table {
@@ -865,7 +880,7 @@ a:active{
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: none;
-	margin-bottom: 7px;
+	margin-bottom: 9px;
 	border-radius: 50%;
 }
 
@@ -1006,19 +1021,21 @@ a:active{
 	left: 0;
 	width: 48px;
 	height: 49px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
 }
 
 .features-description:nth-child(1)::before {
-	background: url("../img/features-icon-1.png") no-repeat;
+	background-position: 0px 0px;
 }
 .features-description:nth-child(2)::before {
-	background: url("../img/features-icon-2.png") no-repeat;
+	background-position: 0px -98px;
 }
 .features-description:nth-child(3)::before {
-	background: url("../img/features-icon-3.png") no-repeat;
+	background-position: 0px -49px;
 }
 .features-description:nth-child(4)::before {
-	background: url("../img/features-icon-4.png") no-repeat;
+	background-position: 0px -147px;
 }  
 
 .features-description:nth-child(2n) {
@@ -1134,7 +1151,7 @@ a:active{
 	        box-sizing: border-box;
 	width: 302px;
 	margin-left: auto;
-	padding: 29px 25px;
+	padding: 30px 25px;
 	padding-bottom: 31px;
 	font-size: 14px;
 	line-height: 20px;
@@ -1331,6 +1348,8 @@ a:active{
 	border: 3px solid rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 	margin-right: 11px;
+	background-clip: content-box;
+	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	opacity: 0.8;
 }
@@ -1347,19 +1366,19 @@ a:active{
 }
 
 .social-twit {
-	background-image: url(../img/twiter-logo.png);
+	background-position: 0px -260px;
 }
 
 .social-insta {
-	background-image: url(../img/insta-logo.png);
+	background-position: 0px -228px;
 }
 
 .social-fb {
-	background-image: url(../img/fb-logo.png);
+	background-position: 0px -196px;
 }
 
 .social-vk {
-	background-image: url(../img/vk-logo.png);
+	background-position: 0px -292px;
 	margin-right: 0;
 }
 
@@ -1411,13 +1430,15 @@ a:active{
 	left: -21px;
 	width: 15px;
 	height: 13px;
-	background-image: url("../img/partners-logo.png");
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -32px -230px;
 }
 
 .developer {
 	width: 190px;
 	font-size: 0;
-	margin-top: 18px;
+	margin-top: 19px;
 	margin-bottom: 25px;
 	margin-left: auto;
 }
@@ -1426,12 +1447,12 @@ a:active{
 	display: inline-block;
 	vertical-align: top;
 	text-decoration: none;	
+	margin-bottom: 1px;
 }
 
 .developer-img {
 	margin: 0;
 	margin-left: 2px;
-	margin-bottom: 4px;
 }
 
 .developer-company {
@@ -1748,7 +1769,7 @@ select::-ms-expand {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	margin-top: 46px;
 }
 
