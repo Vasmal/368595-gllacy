@@ -53,14 +53,18 @@ a:active{
 	    flex-wrap: wrap;
 }
 
+.header {
+	padding-top: 1px;
+}
+
 
 .logo-link {
-	margin-top: 9px;
+	margin-top: 8px;
 	margin-right: 10px;
 }
 
 .nav {
-	margin-top: 23px;
+	margin-top: 22px;
 	
 }
 
@@ -187,7 +191,7 @@ a:active{
 
 .header-right {
 	margin-left: auto;
-	margin-top: 23px;
+	margin-top: 22px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -547,6 +551,7 @@ a:active{
 }
 
 .basket-item-link {
+	display: block;
 	position: relative;
 	width: 220px;
 	font: inherit;
@@ -1718,6 +1723,7 @@ select::-ms-expand {
 }
 
 .page-number {
+	display: block;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
