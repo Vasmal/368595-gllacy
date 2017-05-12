@@ -1151,11 +1151,11 @@ a:active{
 }
 
 .contacts {
-	position: relative;
 	padding: 62px 26px;
 }
 
 .contacts-block {
+	position: relative;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 302px;
