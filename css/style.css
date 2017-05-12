@@ -59,6 +59,7 @@ a:active{
 
 
 .logo-link {
+	display: block;
 	margin-top: 8px;
 	margin-right: 10px;
 }
