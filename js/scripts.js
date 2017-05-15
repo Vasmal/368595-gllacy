@@ -19,7 +19,7 @@ if (close) {
 	});
 }
 
-if (ymaps) {
+if (document.querySelector("#yandex-map")) {
 	ymaps.ready(function () {
 		var myMap = new ymaps.Map('yandex-map', {
 	  		center: [59.939621, 30.330832],
