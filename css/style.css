@@ -465,7 +465,7 @@ a:active{
 }
 
 .basket-open::before {
-	background-position: 0px -344px;
+	background-position: 0 -344px;
 }
 
 .basket-open:hover::before {
@@ -478,11 +478,11 @@ a:active{
 }
 
 .basket-full::before {
-	background-position: 0px -324px;
+	background-position: 0 -324px;
 }
 
 .basket-full:hover::before {
-	background-position: 0px -324px;
+	background-position: 0 -324px;
 }
 
 .basket-table {
@@ -517,7 +517,6 @@ a:active{
 }
 
 .basket hr {
-	margin: 0;
 	padding: 0;
 	height: 1px;
 	background-color: #cacac7;
@@ -988,7 +987,6 @@ a:active{
 }
 
 .features-list {
-	list-style: none;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
@@ -1021,19 +1019,19 @@ a:active{
 }
 
 .features-description:nth-child(1)::before {
-	background-position: 0px 0px;
+	background-position: 0 0;
 }
 
 .features-description:nth-child(2)::before {
-	background-position: 0px -98px;
+	background-position: 0 -98px;
 }
 
 .features-description:nth-child(3)::before {
-	background-position: 0px -49px;
+	background-position: 0 -49px;
 }
 
 .features-description:nth-child(4)::before {
-	background-position: 0px -147px;
+	background-position: 0 -147px;
 }  
 
 .features-description:nth-child(2n) {
@@ -1146,7 +1144,7 @@ a:active{
 	background-image: url("../img/map-with-marker.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0px;
+	background-position: 0;
 }
 
 .map-canvas {
@@ -1386,19 +1384,19 @@ a:active{
 }
 
 .social-twit {
-	background-position: 0px -260px;
+	background-position: 0 -260px;
 }
 
 .social-insta {
-	background-position: 0px -228px;
+	background-position: 0 -228px;
 }
 
 .social-fb {
-	background-position: 0px -196px;
+	background-position: 0 -196px;
 }
 
-.social-vk {
-	background-position: 0px -292px;
+.social-vk {                                               
+	background-position: 0 -292px;
 	margin-right: 0;
 }
 
@@ -1651,6 +1649,8 @@ select::-ms-expand {
 	border-radius: 50%;
 	background-color: #f8f7f4;
 	top: -8px;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 }
 

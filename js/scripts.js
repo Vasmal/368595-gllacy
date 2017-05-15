@@ -1,7 +1,7 @@
 var button = document.querySelector(".button-feedback");
 var popup = document.querySelector(".feedback");
 var overlay = document.querySelector(".modal-overlay");
-var close = popup.querySelector(".feedback-close");
+var close = document.querySelector(".feedback-close");
 
 button.addEventListener("click", function(event) {
 	event.preventDefault();
